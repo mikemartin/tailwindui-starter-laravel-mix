@@ -1,3 +1,3 @@
 # Tailwind UI
 
-Laravel Mix setup example
+Setup example for Laravel Mix with PostCSS and PurgeCSS
