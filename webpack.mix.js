@@ -22,7 +22,12 @@ mix.postCss('resources/css/app.css', 'public/css', [
       'focus-within-pseudo-class': false
     }
   }),
-])
+]).browserSync({
+  proxy: 'tailwindui.test',
+  files: [
+      './public/**/*.html'
+  ]
+});
 
 if (mix.inProduction()) {
   mix.purgeCss({
